@@ -1,10 +1,10 @@
 # Diccionario
 
-my_dict1 = dict()
-print(type(my_dict1))
-my_dict1 = {'name':'Augusto'}
-print(my_dict1)
-print(type(my_dict1))
+my_diccionario = dict()
+print(type(my_diccionario))
+my_diccionario = {'name':'Augusto'}
+print(my_diccionario)
+print(type(my_diccionario))
 
 my_dict = dict()
 my_other_dict = {}
@@ -24,4 +24,12 @@ my_dict = {
 }
 
 print(my_other_dict)
+print(my_dict)
+
+my_dict['Lenguajes'].add('js')
+
+print(my_dict)
+
+my_dict['Lenguajes'].add('JavaScript')
+
 print(my_dict)
