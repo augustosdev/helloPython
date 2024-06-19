@@ -63,3 +63,8 @@ new_directorio = my_directorio.fromkeys(('nombre', 'mail'))
 print(new_directorio)
 
 print(my_directorio)
+
+my_new_dict = dict.fromkeys((new_directorio))
+print(my_new_dict)
+my_new_dict = dict.fromkeys(("Nombre", 1, "Piso"))
+print((my_new_dict))
