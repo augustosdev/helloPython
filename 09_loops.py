@@ -31,3 +31,24 @@ while my_condition < 30:
         print(my_condition)
 
 print('La ejecucion continua')
+
+#  For
+
+my_list = [24, 18, 30, 25, 18, 35]
+
+for element in my_list:
+    print(element)
+
+for element in my_list:
+    print(element)
+    if element == 25:
+        break # Sale del for
+else:
+    print('El bucle finaliza')    
+
+
+for element in my_list:
+    if element == 18:
+        print('Llego a 18')
+    else:
+        print(element)
