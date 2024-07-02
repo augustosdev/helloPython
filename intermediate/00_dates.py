@@ -18,3 +18,18 @@ print_date(now)
 year_2023 = datetime(2025, 1, 15)
 
 print_date(year_2023)
+
+from datetime import time
+current_time = time()
+
+print(current_time)
+print(current_time.hour)
+print(current_time.minute)
+print(current_time.second)
+
+from datetime import date
+current_date = date.today()
+
+print(current_date.year)
+print(current_date.month)
+print(current_date.day)
