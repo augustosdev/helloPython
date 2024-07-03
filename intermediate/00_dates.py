@@ -33,3 +33,6 @@ current_date = date.today()
 print(current_date.year)
 print(current_date.month)
 print(current_date.day)
+
+diff = year_2023 - now  # Siempre que sean del mismo tipo
+print(diff)
