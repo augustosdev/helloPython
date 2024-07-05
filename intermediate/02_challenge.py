@@ -35,3 +35,10 @@ verdadero o falso (Bool) según sean o no anagramas.
 """
 
 
+def is_anagram(valor_uno, valor_dos):
+    if valor_uno.lower() == valor_dos.lower():
+        return False
+    return sorted(valor_uno.lower()) == sorted(valor_dos.lower())
+
+print(is_anagram('love', 'ovEl'))
+
