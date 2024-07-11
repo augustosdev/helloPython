@@ -1,0 +1,6 @@
+Mi nombre es Samuel
+Mi apellido Alvarado
+tengo 35
+estoy aprendiendo Python
+Aunque tambien me gusta JS
+Y SQL
