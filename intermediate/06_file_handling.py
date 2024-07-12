@@ -26,4 +26,32 @@ with open('intermediate/my_file.txt', 'a') as  my_other_file:
 #os.remove('intermediate/my_file.txt')
 
 
+# Json file
+
+import json
+
+json_file = open('intermediate/my_file.json', 'w+')
+
+json_test ={
+    'name' : 'Samuel',
+    'surname' : 'Alvarado',
+    'age' : 35,
+    'languages' : ['Python', 'Swift', 'JS'],
+    'website' : 'https://augustos.dev' 
+}
+
+json.dump(json_test, json_file, indent = 2)
+
+json_file.close()
+
+with open('intermediate/my_file.json') as my_other_file:
+    for line in my_other_file.readlines():
+        print(line)
+
+json_dict = json.load(open('intermediate/my_file.json'))
+print(json_dict)
+print(type(json_dict))
+print(json_dict['name'])
+
+
 
