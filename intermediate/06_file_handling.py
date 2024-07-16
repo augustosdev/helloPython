@@ -54,4 +54,30 @@ print(type(json_dict))
 print(json_dict['name'])
 
 
+# .csv file
+
+import csv
+
+csv_file = open('intermediate/my_file.csv', 'w+')
+
+csv_writer = csv.writer(csv_file)
+csv_writer.writerow(['name', 'surname', 'age', 'language', 'website'])
+csv_writer.writerow(['Samuel', 'Alvarado', 35, 'Python', 'https://augustos.dev'])
+csv_writer.writerow(['Augusto', '', 2, '', 'https://augustos.dev'])
+
+csv_file.close()
+
+with open('intermediate/my_file.csv') as my_other_file:
+    for line in my_other_file.readlines():
+        print(line)
+
+
+
+# .xlsx file
+# import xlrd # Debe instalarse el módulo
+
+# .xml file
+
+import xml
+
 
