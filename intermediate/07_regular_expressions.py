@@ -45,3 +45,31 @@ print(re.split(':', my_string))
 print(re.sub('leccion|Leccion', 'LECCION', my_string))
 print(re.sub('[l|L]eccion', 'LECCION', my_string))
 print(re.sub('Expresiones regulares', 'RegEX', my_string))
+
+
+# Patterns  (patron)
+
+pattern = r'[lL]eccion'
+print(re.findall(pattern, my_string))
+
+pattern = r'[lL]eccion|Expresiones'
+print(re.findall(pattern, my_string))
+
+pattern = r'[0-9]'
+print(re.findall(pattern, my_string))
+
+pattern = r'\d'
+print(re.findall(pattern, my_string))
+
+pattern = r'\D'
+print(re.findall(pattern, my_string))
+
+pattern = r'[l].*'
+print(re.findall(pattern, my_string))
+
+mail = 'sam_zoom@hotmail.com'
+mail_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z-.]+$"
+print(re.match(mail_pattern, mail))
+print(re.search(mail_pattern, mail))
+print(re.findall(mail_pattern, mail))
+
